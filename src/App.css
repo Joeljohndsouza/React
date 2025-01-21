@@ -1,0 +1,264 @@
+.logo {
+  height: 80px;
+  /* Adjust heightadjust  keliye */
+  width: auto;
+  /* Maintain aspect ratio */
+  margin-right: 1600;
+  /* Add space logo and text  ke bhijme*/
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  margin-top: 0px;
+  /* Add margin to account for fixed navbar */
+  position: static;
+
+}
+
+header h1 {
+  margin-left: 440px;
+}
+
+
+
+
+
+
+
+nav {
+  background-color: #444;
+  padding: 10px;
+  text-align: center;
+  position: static; /* Make the navbar fixed */
+   
+  width: 100%; /* Make it span the full width */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+
+.hero {
+  position: relative;
+  height: 60vh;
+  background: url() center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Overlay for better text visibility */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+/* Hero Section Button */
+.hero-content .btn {
+  display: inline-block; /* Ensure the button is visible */
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  padding: 12px 24px; /* Padding for size */
+  border-radius: 25px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.1em; /* Slightly larger text */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.btn:active {
+  transform: translateY(0); /* Reset lift when clicked */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Reset shadow when clicked */
+}
+
+/* Register Section Styles */
+#register {
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+#register h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#register .form-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#register a {
+  color: #28a745;
+  text-decoration: none;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #444;
+  padding: 0.5rem 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #333;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.movie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.movie h3 {
+  margin: 0;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #218838;
+}
+
+.form-container {
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-top: 2rem;
+}
+
+.form-container input, .form-container select, .form-container button {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.form-container button:hover {
+  background-color: #218838;
+}
+
+.theatre {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.theatre h3 {
+  margin: 0;
+}
+
+
+/*Login Section*/
+login {
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+#login h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#login .form-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#login a {
+  color: #28a745;
+  text-decoration: none;
+}
+
+#login a:hover {
+  text-decoration: underline;
+}
