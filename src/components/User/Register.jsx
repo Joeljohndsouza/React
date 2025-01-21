@@ -68,22 +68,29 @@ function Register() {
 
         <form className="form-container"  onSubmit={submitHandler}>
             <label for="first-name">First Name:</label>
-            <input type="text" id="first-name" placeholder="Enter your first name" required/>
+            <input type="text" id="first-name" placeholder="Enter your first name"
+            name='firstName' 
+            required/>
             
             <label for="last-name">Last Name:</label>
-            <input type="text" id="last-name" placeholder="Enter your last name" required/>
+            <input type="text" id="last-name" placeholder="Enter your last name" 
+            name='lastName'  required/>
             
             <label for="emailid">EmailId:</label>
-            <input type="email" id="emailid" placeholder="Enter your Email Id"/>
+            <input type="email" id="emailid" placeholder="Enter your Email Id"
+            name='emailid' />
             
             <label for="age">Age:</label>
-            <input type="number" id="age" placeholder="Enter your age" required/>
+            <input type="number" id="age" placeholder="Enter your age" 
+            name='age' required/>
 
             <label for="new-password">Password:</label>
-            <input type="password" id="new-password" placeholder="Choose a password"/>
+            <input type="password" id="new-password" placeholder="Choose a password"
+            name='password'/>
         
             <label for="confirm-password">Confirm Password:</label>
-            <input type="password" id="confirm-password" placeholder="Confirm your password"/>
+            <input type="password" id="confirm-password" placeholder="Confirm your password"
+            name='confirm-password' />
         
             <button id="register-btn" type="submit">Register</button>
             <p>Already have an account? <a href="../Final Files/Login.html">Login here</a></p>
